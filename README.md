@@ -30,13 +30,17 @@ Type it, or ask in plain words:
 
 | You type | What opens |
 |---|---|
-| `/newsession web` | A new window in the `web` folder, running your default account |
-| `/newsession api work` | A new window in the `api` folder, running the `work` account |
-| `/newsession api work — fix the failing login test and report back` | The same, with that text as the new session's first prompt |
-| "hand this off to a new session in the api repo" | Claude writes the handoff prompt and opens the window |
+| `/newsession thesis` | A new window in the `thesis` folder, running your default account |
+| `/newsession website work` | A new window in the `website` folder, running the `work` account |
+| `/newsession website work — fix the broken contact form and report back` | The same, with that text as the new session's first prompt |
+| "hand this off to a new session in my thesis folder" | Claude writes the handoff prompt and opens the window |
 
-Claude only opens a session when you ask for one. It confirms the new `claude` process is running before telling you
-it opened.
+Claude only opens a session when you ask for one, but it can open one itself when you do: you don't have to type
+the command. It confirms the new `claude` process is running before telling you it opened.
+
+Do not add `disable-model-invocation: true` to the skill's header. That setting means only you can start the skill
+by typing `/newsession`, so a request like "hand this off to a new session when the tests finish" silently does
+nothing.
 
 ## More than one Claude account
 

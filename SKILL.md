@@ -1,6 +1,6 @@
 ---
 name: newsession
-description: Use when the user types /newsession, or asks Claude to open, start or hand work off to a new Claude Code session (e.g. "hand this off to a new session", "open a new session in the api repo"), to open it in a new Terminal window, optionally with a first prompt.
+description: Use when the user types /newsession, or asks Claude to open, start or hand work off to a new Claude Code session (e.g. "hand this off to a new session", "open a new session in my thesis folder"), to open it in a new Terminal window, optionally with a first prompt.
 argument-hint: <repo> [account] [— first prompt]
 ---
 Open a new Terminal.app window that starts Claude in the named repo, then stop.
@@ -9,8 +9,8 @@ Open a new Terminal.app window that starts Claude in the named repo, then stop.
 
 | repo key | folder |
 |---|---|
-| `web` | `$HOME/code/web-app` |
-| `api` | `$HOME/code/api-server` |
+| `thesis` | `$HOME/Documents/thesis` |
+| `website` | `$HOME/code/website` |
 
 | account key | command |
 |---|---|
